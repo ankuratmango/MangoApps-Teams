@@ -43,12 +43,8 @@ export default function App() {
           {loading ? (
             <Spinner style={{ margin: 100 }} />
           ) : (
-            <Routes>
-              <Route path="/privacy" element={<Privacy />} />
-              <Route path="/termsofuse" element={<TermsOfUse />} />
-              <Route path="/tab" element={<Tab />} />
-              <Route path="*" element={<Navigate to={"/tab"} />}></Route>
-            </Routes>
+            <iframe src="https://devmango1.mangopulse.com/embed_feeds_external"
+                    width="100%" height="100%"></iframe>
           )}
         </Router>
       </FluentProvider>
