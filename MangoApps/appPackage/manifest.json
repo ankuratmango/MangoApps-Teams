@@ -1,26 +1,26 @@
 {
     "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.15/MicrosoftTeams.schema.json",
     "manifestVersion": "1.15",
-    "version": "1.0.0",
+    "version": "3.1.41",
     "id": "${{TEAMS_APP_ID}}",
     "packageName": "com.microsoft.teams.extension",
     "developer": {
         "name": "MangoApps, Inc.",
-        "websiteUrl": "${{TAB_ENDPOINT}}",
-        "privacyUrl": "${{TAB_ENDPOINT}}/index.html#/privacy",
-        "termsOfUseUrl": "${{TAB_ENDPOINT}}/index.html#/termsofuse"
+        "websiteUrl": "https://www.mangoapps.com/",
+        "privacyUrl": "https://www.mangoapps.com/privacy-policy",
+        "termsOfUseUrl": "https://www.mangoapps.com/terms-of-service"
     },
     "icons": {
         "color": "color.png",
         "outline": "outline.png"
     },
     "name": {
-        "short": "MangoApps-${{TEAMSFX_ENV}}",
-        "full": "Full name for MangoApps"
+        "short": "MangoApps",
+        "full": "MangoApps"
     },
     "description": {
-        "short": "Short description of MangoApps",
-        "full": "Full description of MangoApps"
+        "short": "INTEGRATED INTRANET & EMPLOYEE APP PLATFORM",
+        "full": "Connect, Engage and Digitize Your Enterprise \n With MangoApps, you can easily onboard new employees, foster effective connections, engage both frontline and office staff, digitize daily tasks and workflows, and guide each individual through their unique employee journey—all in one place."
     },
     "accentColor": "#FFFFFF",
     "bots": [],
@@ -42,7 +42,11 @@
         "messageTeamMembers"
     ],
     "validDomains": [
-        "${{TAB_DOMAIN}}"
+        "${{TAB_DOMAIN}}",
+        "cypress.mangopulse.com",
+        "lmsteam.mangopulse.com",
+        "*.*.mangopulse.com",
+        "*.*.mangoapps.com"
     ],
     "webApplicationInfo": {
         "id": "${{AAD_APP_CLIENT_ID}}",
